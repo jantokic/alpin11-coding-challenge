@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@alpin11-coding-challenge/api/data-access-db": [
+        "api/data-access-db/src/index.ts"
+      ],
+      "@alpin11-coding-challenge/api/feature-book": [
+        "api/feature-book/src/index.ts"
+      ],
+      "@alpin11-coding-challenge/api/generated-db-types": [
+        "api/generated-db-types/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
