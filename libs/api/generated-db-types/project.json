@@ -1,0 +1,9 @@
+{
+  "name": "api-generated-db-types",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "/libs/api/generated-db-types/src",
+  "projectType": "library",
+  "tags": ["scope:api"],
+  "// targets": "to see all targets run: nx show project api-generated-db-types --web",
+  "targets": {}
+}

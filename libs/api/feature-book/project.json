@@ -1,0 +1,9 @@
+{
+  "name": "api-feature-book",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/api/feature-book/src",
+  "projectType": "library",
+  "tags": ["scope:api"],
+  "// targets": "to see all targets run: nx show project api-feature-book --web",
+  "targets": {}
+}

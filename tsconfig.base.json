@@ -15,14 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@alpin11-coding-challenge/api/data-access-db": [
-        "api/data-access-db/src/index.ts"
+      "@alpin11-coding-challenge/libs/api/data-access-db": [
+        "libs/api/data-access-db/src/index.ts"
       ],
-      "@alpin11-coding-challenge/api/feature-book": [
-        "api/feature-book/src/index.ts"
+      "@alpin11-coding-challenge/libs/api/feature-book": [
+        "libs/api/feature-book/src/index.ts"
       ],
-      "@alpin11-coding-challenge/api/generated-db-types": [
-        "api/generated-db-types/src/index.ts"
+      "@alpin11-coding-challenge/libs/api/generated-db-types": [
+        "libs/api/generated-db-types/src/index.ts"
+      ],
+      "@alpin11-coding-challenge/libs/frontend/data-access-graphql": [
+        "libs/frontend/data-access-graphql/src/index.ts"
       ]
     }
   },

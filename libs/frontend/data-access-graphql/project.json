@@ -1,0 +1,25 @@
+{
+  "name": "frontend-data-access-graphql",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/frontend/data-access-graphql/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/frontend/data-access-graphql",
+        "main": "libs/frontend/data-access-graphql/src/index.ts",
+        "tsConfig": "libs/frontend/data-access-graphql/tsconfig.lib.json",
+        "assets": ["libs/frontend/data-access-graphql/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/frontend/data-access-graphql/**/*.ts"]
+      }
+    }
+  }
+}
