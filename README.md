@@ -3,12 +3,12 @@
 # Stack
 ● Next.js 14
 ● Nest.js 
-● GraphQL with CodeGen
-● PostgreSQL and PrismaORM
+● GraphQL
+● PostgreSQL and Prisma
 ● Typescript
 
 Additional libraries
-● React
+● React Hook Forms
 ● Zod 
 ● Shadcn/ui
 
