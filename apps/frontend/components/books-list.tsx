@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Book } from '../types/books';
-import { Button } from 'libs/shared/src/components/ui/button';
+import { Button } from '@alpin11-coding-challenge/libs/shared';
 
 const BooksList = ({
   books,

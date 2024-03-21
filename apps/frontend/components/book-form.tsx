@@ -1,3 +1,4 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 'use client';
 import { Button } from '../../../libs/shared/src/components/ui/button';
 import { z } from 'zod';

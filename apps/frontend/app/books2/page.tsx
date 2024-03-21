@@ -1,4 +1,5 @@
 import BooksList from '../../components/books-list';
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import { Input } from '../../../../libs/shared/src/components/ui/input';
 
 import { gql } from '../../data-access/graphql-client';
@@ -37,7 +38,7 @@ const Page = async () => {
         <Input type="text" name="title" />
         <button type="submit">Submit</button>
       </form>
-      <BooksList books={books} />
+      <BooksList books={books} currentPage={0} totalPages={1} totalBooks={1} />
     </main>
   );
 };

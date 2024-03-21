@@ -1,5 +1,6 @@
 import '../styles/global.css';
 import { ReactNode } from 'react';
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import {Toaster} from "../../../libs/shared/src/components/ui/sonner";
 
 export const metadata = {
