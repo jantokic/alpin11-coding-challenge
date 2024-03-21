@@ -8,6 +8,10 @@
 
 Run `npm install`!
 
+## Setting up PostgreSQL
+
+Create a PostgreSQL and update the .env file to your needs!
+
 ## Start the backend application
 
 Run `npx nx serve backend` to start the development server or `npm run start:backend`. Happy coding!
