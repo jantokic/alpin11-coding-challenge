@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -26,7 +26,9 @@
       ],
       "@alpin11-coding-challenge/libs/frontend/data-access-graphql": [
         "libs/frontend/data-access-graphql/src/index.ts"
-      ]
+      ],
+      "@alpin11-coding-challenge/libs/shared": ["libs/shared/src/index.ts"],
+      "@alpin11-coding-challenge/libs/shared/server": ["libs/shared/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

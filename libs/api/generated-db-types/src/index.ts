@@ -804,6 +804,8 @@ export class IntWithAggregatesFilter {
     not?: InstanceType<typeof IntWithAggregatesFilter>;
     @Field(() => IntFilter, {nullable:true})
     _count?: InstanceType<typeof IntFilter>;
+    @Field(() => FloatFilter, {nullable:true})
+    _avg?: InstanceType<typeof FloatFilter>;
     @Field(() => IntFilter, {nullable:true})
     _sum?: InstanceType<typeof IntFilter>;
     @Field(() => IntFilter, {nullable:true})
@@ -812,6 +814,179 @@ export class IntWithAggregatesFilter {
     _max?: InstanceType<typeof IntFilter>;
 }
 
+@InputType()
+export class NestedDateTimeFilter {
+    @Field(() => Date, {nullable:true})
+    equals?: Date | string;
+    @Field(() => [Date], {nullable:true})
+    in?: Array<Date> | Array<string>;
+    @Field(() => [Date], {nullable:true})
+    notIn?: Array<Date> | Array<string>;
+    @Field(() => Date, {nullable:true})
+    lt?: Date | string;
+    @Field(() => Date, {nullable:true})
+    lte?: Date | string;
+    @Field(() => Date, {nullable:true})
+    gt?: Date | string;
+    @Field(() => Date, {nullable:true})
+    gte?: Date | string;
+    @Field(() => NestedDateTimeFilter, {nullable:true})
+    not?: NestedDateTimeFilter;
+}
+
+@InputType()
+export class NestedDateTimeWithAggregatesFilter {
+    @Field(() => Date, {nullable:true})
+    equals?: Date | string;
+    @Field(() => [Date], {nullable:true})
+    in?: Array<Date> | Array<string>;
+    @Field(() => [Date], {nullable:true})
+    notIn?: Array<Date> | Array<string>;
+    @Field(() => Date, {nullable:true})
+    lt?: Date | string;
+    @Field(() => Date, {nullable:true})
+    lte?: Date | string;
+    @Field(() => Date, {nullable:true})
+    gt?: Date | string;
+    @Field(() => Date, {nullable:true})
+    gte?: Date | string;
+    @Field(() => NestedDateTimeWithAggregatesFilter, {nullable:true})
+    not?: NestedDateTimeWithAggregatesFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _count?: NestedIntFilter;
+    @Field(() => NestedDateTimeFilter, {nullable:true})
+    _min?: NestedDateTimeFilter;
+    @Field(() => NestedDateTimeFilter, {nullable:true})
+    _max?: NestedDateTimeFilter;
+}
+
+@InputType()
+export class NestedFloatFilter {
+    @Field(() => Float, {nullable:true})
+    equals?: number;
+    @Field(() => [Float], {nullable:true})
+    in?: Array<number>;
+    @Field(() => [Float], {nullable:true})
+    notIn?: Array<number>;
+    @Field(() => Float, {nullable:true})
+    lt?: number;
+    @Field(() => Float, {nullable:true})
+    lte?: number;
+    @Field(() => Float, {nullable:true})
+    gt?: number;
+    @Field(() => Float, {nullable:true})
+    gte?: number;
+    @Field(() => NestedFloatFilter, {nullable:true})
+    not?: NestedFloatFilter;
+}
+
+@InputType()
+export class NestedIntFilter {
+    @Field(() => Int, {nullable:true})
+    equals?: number;
+    @Field(() => [Int], {nullable:true})
+    in?: Array<number>;
+    @Field(() => [Int], {nullable:true})
+    notIn?: Array<number>;
+    @Field(() => Int, {nullable:true})
+    lt?: number;
+    @Field(() => Int, {nullable:true})
+    lte?: number;
+    @Field(() => Int, {nullable:true})
+    gt?: number;
+    @Field(() => Int, {nullable:true})
+    gte?: number;
+    @Field(() => NestedIntFilter, {nullable:true})
+    not?: NestedIntFilter;
+}
+
+@InputType()
+export class NestedIntWithAggregatesFilter {
+    @Field(() => Int, {nullable:true})
+    equals?: number;
+    @Field(() => [Int], {nullable:true})
+    in?: Array<number>;
+    @Field(() => [Int], {nullable:true})
+    notIn?: Array<number>;
+    @Field(() => Int, {nullable:true})
+    lt?: number;
+    @Field(() => Int, {nullable:true})
+    lte?: number;
+    @Field(() => Int, {nullable:true})
+    gt?: number;
+    @Field(() => Int, {nullable:true})
+    gte?: number;
+    @Field(() => NestedIntWithAggregatesFilter, {nullable:true})
+    not?: NestedIntWithAggregatesFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _count?: NestedIntFilter;
+    @Field(() => NestedFloatFilter, {nullable:true})
+    _avg?: NestedFloatFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _sum?: NestedIntFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _min?: NestedIntFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _max?: NestedIntFilter;
+}
+
+@InputType()
+export class NestedStringFilter {
+    @Field(() => String, {nullable:true})
+    equals?: string;
+    @Field(() => [String], {nullable:true})
+    in?: Array<string>;
+    @Field(() => [String], {nullable:true})
+    notIn?: Array<string>;
+    @Field(() => String, {nullable:true})
+    lt?: string;
+    @Field(() => String, {nullable:true})
+    lte?: string;
+    @Field(() => String, {nullable:true})
+    gt?: string;
+    @Field(() => String, {nullable:true})
+    gte?: string;
+    @Field(() => String, {nullable:true})
+    contains?: string;
+    @Field(() => String, {nullable:true})
+    startsWith?: string;
+    @Field(() => String, {nullable:true})
+    endsWith?: string;
+    @Field(() => NestedStringFilter, {nullable:true})
+    not?: NestedStringFilter;
+}
+
+@InputType()
+export class NestedStringWithAggregatesFilter {
+    @Field(() => String, {nullable:true})
+    equals?: string;
+    @Field(() => [String], {nullable:true})
+    in?: Array<string>;
+    @Field(() => [String], {nullable:true})
+    notIn?: Array<string>;
+    @Field(() => String, {nullable:true})
+    lt?: string;
+    @Field(() => String, {nullable:true})
+    lte?: string;
+    @Field(() => String, {nullable:true})
+    gt?: string;
+    @Field(() => String, {nullable:true})
+    gte?: string;
+    @Field(() => String, {nullable:true})
+    contains?: string;
+    @Field(() => String, {nullable:true})
+    startsWith?: string;
+    @Field(() => String, {nullable:true})
+    endsWith?: string;
+    @Field(() => NestedStringWithAggregatesFilter, {nullable:true})
+    not?: NestedStringWithAggregatesFilter;
+    @Field(() => NestedIntFilter, {nullable:true})
+    _count?: NestedIntFilter;
+    @Field(() => NestedStringFilter, {nullable:true})
+    _min?: NestedStringFilter;
+    @Field(() => NestedStringFilter, {nullable:true})
+    _max?: NestedStringFilter;
+}
 
 @InputType()
 export class StringFilter {

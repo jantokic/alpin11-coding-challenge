@@ -9,6 +9,6 @@ export default defineConfig({
       webServerCommands: { default: 'nx run frontend:start' },
       ciWebServerCommand: 'nx run frontend:serve-static',
     }),
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://localhost:4200',
   },
 });

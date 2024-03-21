@@ -1,5 +1,6 @@
 import '../styles/global.css';
 import { ReactNode } from 'react';
+import {Toaster} from "../../../libs/shared/src/components/ui/sonner";
 
 export const metadata = {
   title: 'Welcome to frontend',
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head />
+      <body>
+        <main>{children}</main>
+        <Toaster />
+      </body>
     </html>
-  );
+  )
 }

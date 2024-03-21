@@ -5,7 +5,9 @@
     "outDir": "../../dist/out-tsc",
     "module": "commonjs",
     "types": ["cypress", "node"],
-    "sourceMap": false
+    "sourceMap": false,  // Set sourceMap to true
+    "inlineSourceMap": false,  // Remove inlineSourceMap
+    "inlineSources": false  // Remove inlineSources
   },
   "include": [
     "**/*.ts",

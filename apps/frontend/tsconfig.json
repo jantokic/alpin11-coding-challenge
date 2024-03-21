@@ -30,7 +30,7 @@
     "../../dist/apps/frontend/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-  ],
+, "postcss.config.js", "tailwind.config.js"  ],
   "exclude": [
     "node_modules",
     "jest.config.ts",

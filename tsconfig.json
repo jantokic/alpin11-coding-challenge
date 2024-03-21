@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@alpin11-coding-challenge/libs/shared": ["libs/shared/src/index.ts"],
+      "@alpin11-coding-challenge/libs/shared/*": ["libs/shared/src/*"]
+    }
+
+  },
+  "files": [],
+  "include": [],
+  "extends": "./tsconfig.base.json"
+}
